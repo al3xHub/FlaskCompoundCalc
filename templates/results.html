@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <h1>Calculation Results</h1>
+    <p>The final amount with interest €{{final_amount | round(2)}}</p>
+    <p>Difference from contributions without interest: €{{ difference|round(2) }}</p>
+    <h2>Difference and Growth over time</h2>
+    <img src="data:image/png;base64,{{ plot_url }}" alt="Compound Interest Graph">
+    <a href="/">Back</a>
+</body>
+</html>
